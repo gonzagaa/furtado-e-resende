@@ -30,6 +30,12 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
+ScrollReveal().reveal('#home .content header', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
+ScrollReveal().reveal('#home .content a, #services .content .text, #advogados .content .advogado .text, #sobre .content h2, #sobre .content p, #contato header h2, #contato header p, #contato form label, #contato form .input', { distance: '400px', origin: 'bottom', duration: 500, easing: 'ease-in-out'});
+
+ScrollReveal().reveal('#services .areas .cards .card, #advogados .content .advogado .perfil, #services .content img, #contato form input, #contato form textareas', { distance: '0px', opacity: 0, duration: 700, easing: 'ease-in-out'});
+
+
 var swiper3 = new Swiper(".mySwiper3", {
     grabCursor: true,
     loop: true,

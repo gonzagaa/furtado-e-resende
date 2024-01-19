@@ -142,13 +142,14 @@ html {
     color: var(--color-text);
 
     text-shadow: 5px 12px 10px rgba(10, 10, 10, 0.121), 0px -5px 35px rgba(255,255,255,0.3);
+  } 
+
+  #home .banner a {
+    color: #111111;
   }
 
-  .banner a {
-    color: var(--paragraphy-color);
-  }
-
-  .banner a button {
+  #home .banner a button {
+    color: #111111;
     background-color: var(--color-text);
     border: none;
     font-size: 1.6rem;
@@ -157,11 +158,10 @@ html {
     border-radius: 1rem;
     padding: 1rem 2rem;
     box-shadow: 4px 8px 20px #111111;
-
     transition: all 200ms ease-in-out;
   }
 
-  .banner a button:hover {
+  #home .banner a button:hover {
     background-color: #111111;
     cursor: pointer;
     color: #d8d8d8;
@@ -173,7 +173,7 @@ html {
 }
 
 #services .content {
-  margin-top: -10rem;
+  margin-top: -9rem;
 }
 
 #services .content h2 {
@@ -215,27 +215,27 @@ html {
   text-transform: uppercase;
 }
 
-#services .areas .cards .card.button {
+#services .areas .cards a .card.button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#services .areas .cards .card.button h3 {
+#services .areas .cards a .card.button h3 {
   font-size: 2rem;
 }
 
-#services .areas .cards .card.button ion-icon {
+#services .areas .cards a .card.button ion-icon {
   font-size: 4rem;
 }
 
-#services .areas .cards .card.button:hover ion-icon {
+#services .areas .cards a .card.button:hover ion-icon {
   animation: movearrow 1s infinite ease-in-out;
 }
 
 #services .areas .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   gap: 4rem;
 }
@@ -252,20 +252,22 @@ html {
   padding: 2rem;
 
   box-shadow: 4px 8px 30px #111111;
-
   transition: all 200ms ease-in-out;
+  min-height: 25rem;
+}
+
+#services .wrapper a {
+  text-decoration: none;
 }
 
 #services .areas .cards .card h3 {
   color: var(--color-text);
-
   transition: all 200ms ease-in-out;
 }
 
 #services .areas .cards .card p {
   color: #b4b4b4;
   font-weight: 500;
-  
   transition: all 200ms ease-in-out;
 }
 
@@ -562,8 +564,8 @@ html {
     width: min(133rem, 100%);
   }
 
-  header#home .banner .right h1 {
-    font-size: 7rem;
+  header#home .banner .content header h1 { 
+    font-size: 5rem;
   }
 
   header#home .wrapper-home .banner .content {
@@ -611,7 +613,8 @@ html {
   }
 
   header#home .banner button {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    color: #111111;
   }
 
   section#services .wrapper .content {
@@ -625,21 +628,26 @@ html {
   text-align: left;
  }
 
+ section#services .wrapper .content .text p {
+  font-size: 1.8rem;
+ }
+
  section#services .wrapper .text h2,
  section#services .wrapper .areas h2,
  section#sobre .wrapper h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: left;
  }
 
  section#advogados .wrapper h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
  }
 
  section#advogados .wrapper header p,
  section#sobre .wrapper p {
   text-align: left;
+  font-size: 1.8rem;
  }
 
  section#services .wrapper .areas {
@@ -684,7 +692,7 @@ section#advogados .advogado.two .perfil {
 }
 
 section#sobre p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 section#sobre .wrapper {
@@ -710,7 +718,7 @@ section#contato .wrapper header {
 }
 
 section#contato .wrapper header h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 section#contato .wrapper header p {

@@ -192,7 +192,7 @@ nav {
   }
   
   .menu .button {
-    background: var(--primary-color);
+    background-color: #d8d8d8;
     border-radius: 4rem;
     text-decoration: none;
   
@@ -279,7 +279,7 @@ nav {
       }
 
       nav#navigation .menu ul li a:hover {
-        color: var(--primary-color);
+        color: #fff;
         opacity: 1;
       }
 
