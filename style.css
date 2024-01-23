@@ -11,6 +11,16 @@
     --color-text: #f0f0f0;
     --paragraphy-color: #111111;
     --p-color: #444444;
+
+    --background-dourado: #8c7851;
+    --headline-dourado: #fffffe;
+    --card-paragraphy-dourado: #020826;
+    --card-dourado: #eaddcf;
+
+    --background: #f9f4ef;
+    --card-background: #fffffe; 
+    --headline: #020826;
+    --paragraphy: #716040;
 }  
 
 html {
@@ -21,8 +31,10 @@ html {
   body {
     width: 100%;
     height: 100%;
+  }
 
-    font-family: "Roboto", sans-serif;
+  body, input, textarea, button {
+    font-family: "Cormorant", serif;
   }
   
   ul {
@@ -38,7 +50,7 @@ html {
   }
 
   .wrapper {
-    width: min(50rem, 100%);
+    width: min(70rem, 100%);
     margin-inline: auto;
   
     padding-inline: 2.4rem;
@@ -56,26 +68,24 @@ html {
   }
 
 /* SHAPE DIVIDER =================== */
-.custom-shape-divider-bottom-1705520268 {
+.custom-shape-divider-bottom-1706013025 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1705520268 svg {
+.custom-shape-divider-bottom-1706013025 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 296px;
-  transform: rotateY(180deg);
+  height: 101px;
 }
 
-.custom-shape-divider-bottom-1705520268 .shape-fill {
-  fill: #f0f0f0;
+.custom-shape-divider-bottom-1706013025 .shape-fill {
+  fill: var(--background);
 }
 
 /* HOME =================== */
@@ -85,10 +95,6 @@ html {
   background-size: cover;
   height: 100vh;
   position: relative;
-}
-
-#home  .banner .content {
-  margin-top: -10rem;
 }
 
 #home .banner video {
@@ -106,18 +112,18 @@ html {
 
   .banner .content {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .banner .content .left {
+    display: flex;
     gap: 5rem;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-  }
-
-  .banner .content header {
-    text-align: left;
-  }
-
-  .banner .left img {
-    width: 80%;
+    align-items: center;
   }
 
   .banner .right {
@@ -131,49 +137,43 @@ html {
 
   .banner span {
     font-weight: 500;
-    color: #b4b4b4;
+    color: #e0e0e0;
     font-size: 1.6rem;
   }
 
   .banner h1 {
+    margin-bottom: 1rem;
     margin-top: 1rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--color-text);
 
     text-shadow: 5px 12px 10px rgba(10, 10, 10, 0.121), 0px -5px 35px rgba(255,255,255,0.3);
-  } 
+  }
 
   #home .banner a {
     color: #111111;
   }
 
-  #home .banner a button {
-    color: #111111;
-    background-color: var(--color-text);
-    border: none;
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-    font-weight: 700;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    box-shadow: 4px 8px 20px #111111;
+  #home .right a svg {
+    fill: var(--background-dourado);
+    filter: drop-shadow(3px 6px 30px #111111);
+
     transition: all 200ms ease-in-out;
   }
 
-  #home .banner a button:hover {
-    background-color: #111111;
-    cursor: pointer;
-    color: #d8d8d8;
+  #home .right a:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(6px 12px 30px #111111);
   }
 
 /* services =================== */
 #services {
-  background-color: #f0f0f0;
+  background-color: var(--background);
 }
 
 #services .content {
-  margin-top: -9rem;
+  margin-top: -7rem;
 }
 
 #services .content h2 {
@@ -200,7 +200,7 @@ html {
 }
 
 #services .content img {
-  max-width: 80%;
+  max-width: 70%;
   border-radius: 1.5rem;
   box-shadow:  20px 20px 60px #b4b4b4,
              -10px -10px 60px #ffffff2f;
@@ -240,6 +240,10 @@ html {
   gap: 4rem;
 }
 
+#services .wrapper a {
+  text-decoration: none;
+}
+
 #services .areas .cards .card {
   display: flex;
   flex-direction: column;
@@ -247,64 +251,63 @@ html {
   text-align: left;
   gap: 2rem;
 
-  background-color: #111111;
+  background-color: #181818;
   border-radius: 1rem;
   padding: 2rem;
 
-  box-shadow: 4px 8px 30px #111111;
+  box-shadow: 2px 4px 20px #5f5f5f;
   transition: all 200ms ease-in-out;
-  min-height: 25rem;
+  min-height: 27rem;
 }
 
-#services .wrapper a {
-  text-decoration: none;
-}
-
-#services .areas .cards .card h3 {
-  color: var(--color-text);
+#services .areas .cards .card:hover h3 {
   transition: all 200ms ease-in-out;
+  color: #716040;
+
 }
 
-#services .areas .cards .card p {
-  color: #b4b4b4;
-  font-weight: 500;
-  transition: all 200ms ease-in-out;
+#services .areas .cards .card:hover p {
+  color: var(--p-color);
+  font-weight: 800;
 }
 
-#services .areas .cards .card ion-icon {
-  color: var(--color-text);
-  font-size: 3rem;
+#services .areas .cards .card:hover ion-icon {
+  color: var(--background-dourado);
 
   transition: all 200ms ease-in-out;
 }
 
 #services .areas .cards .card:hover {
-  background-color: #d8d8d8;
+  background-color: var(--background);
   box-shadow: 4px 8px 30px #7c7c7c;
   cursor: pointer;
 }
 
-#services .areas .cards .card:hover h3 {
-  color: var(--p-color);
+#services .areas .cards .card h3 {
+  color: var(--headline-dourado);
 }
 
-#services .areas .cards .card:hover p {
-  color: var(--p-color);
+#services .areas .cards .card p {
+  color: #c2c2c2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: all 200ms ease-in-out;
 }
 
-#services .areas .cards .card:hover ion-icon {
-  color: var(--paragraphy-color);
+#services .areas .cards .card ion-icon {
+  color: var(--headline-dourado);
+  font-size: 3rem;
 }
 /* advogados =================== */
 #advogados {
-  background-color: #111111;
+  background-color: var(--background-dourado);
   position: relative;
 }
 
 #advogados h2 {
   font-size: 3rem;
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--headline-dourado);
   margin-top: 8rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
@@ -323,7 +326,7 @@ html {
 }
 
 #advogados .advogado .text h3 {
-  color: var(--color-text);
+  color: var(--headline-dourado);
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -331,8 +334,8 @@ html {
 }
 
 #advogados .advogado .text p {
-  font-weight: 500;
-  color: #b4b4b4;
+  font-weight: 400;
+  color: #e4e4e4;
 }
 
 /* shape divider advogados =================== */
@@ -353,34 +356,12 @@ html {
 }
 
 .custom-shape-divider-top-1705434002 .shape-fill {
-  fill: #f0f0f0;
-}
-
-.custom-shape-divider-bottom-1705434079 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1705434079 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 84px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1705434079 .shape-fill {
-  fill: #f0f0f0;
+  fill: var(--background);
 }
 
 /* sobre =================== */
 #sobre {
-  background-color: #f0f0f0;
+  background-color: var(--background);
 }
 
 #sobre .content h2 {
@@ -406,20 +387,20 @@ html {
 }
 /* contato =================== */
 #contato {
-  background-color: #f0f0f0;
+  background-image: url(./assets/Captura\ de\ tela\ 2024-01-22\ 174925.png);
 }
 
 #contato header h2 {
   font-size: 3rem;
   font-weight: 500;
-  color: var(--paragraphy-color);
+  color: var(--background);
   text-transform: uppercase;
   margin-bottom: .8rem;
 }
 
 #contato header p {
   font-weight: 500;
-  color: var(--p-color);
+  color: var(--background)
 }
 
 #contato form {
@@ -432,17 +413,29 @@ html {
   margin-top: 5rem;
 }
 
+#contato form label {
+  color: var(--background);
+}
+
 #contato form input {
   width: 100%;
   border: none;
-  background-color: #111111;
+  background-color: var(--background);
   padding: 1.5rem;
   color: #d8d8d8;
   border-radius: 1rem;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #contato input::placeholder {
-  color: #666666;
+  color: #bebebe;
 }
 
 #contato form input:focus {
@@ -450,7 +443,7 @@ html {
 }
 
 #contato form button {
-  background-color: #111111;
+  background-color: var(--background-dourado);
   border: none;
   outline: none;
   color: #d8d8d8;
@@ -461,13 +454,15 @@ html {
 }
 
 #contato form button:hover {
-  background-color: #d8d8d8;
+  background-color: var(--background);
   color: #111111;
+  cursor: pointer;
 }
 
 /* footer =================== */
 #footer {
   background-color: #111111;
+  font-family: 'Poppins', sans-serif;
 }
 
 #footer .wrapper {
@@ -479,7 +474,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 #footer .content ion-icon {
@@ -488,8 +483,16 @@ html {
 }
 
 #footer .content p {
-  color: #d8d8d8;
-  font-weight: 500;
+  color: #b1b1b1;
+  font-weight: 400;
+}
+
+#footer .content .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 #footer .content p.phone {
@@ -521,7 +524,8 @@ html {
 }
 
 #footer .foot p a {
-  color: #95f108;
+  color: #fff;
+  text-decoration: none;
   font-weight: 700;
 }
 
@@ -550,8 +554,8 @@ html {
   transform: translateY(0);
 }
 
-#buttonWhatsapp img {
-  width: 6rem;
+#buttonWhatsapp svg {
+  width: 4rem;
   transition: all 300ms ease-in-out;
 }
 
@@ -576,7 +580,7 @@ html {
     background-image: inherit;
     background-repeat: inherit;
     background-size: inherit;
-    height: 70vh;
+    height: 65vh;
   }
 
   header#home .banner video {
@@ -612,9 +616,9 @@ html {
     font-size: 6rem;
   }
 
-  header#home .banner button {
-    font-size: 1.6rem;
-    color: #111111;
+  #buttonWhatsapp svg {
+    width: 5rem;
+    transition: all 300ms ease-in-out;
   }
 
   section#services .wrapper .content {
@@ -671,7 +675,7 @@ section#advogados .advogado {
 }
 
 section#advogados .advogado .perfil img {
-  width: 70%;
+  width: 40%;
   aspect-ratio: 1/1;
 }
 
@@ -701,6 +705,10 @@ section#sobre .wrapper {
   gap: 10rem;
   }
 
+section#contato {
+  background-image: inherit;
+}
+
 section#contato .wrapper {
   display: grid;
   grid-template-areas: "A B";
@@ -728,6 +736,18 @@ section#contato .wrapper header p {
 section#contato .wrapper form {
   grid-area: A;
 }
+
+footer#footer .wrapper {
+  padding: 4rem;
+}
+
+footer#footer .wrapper .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 }
 
 @keyframes movearrow {

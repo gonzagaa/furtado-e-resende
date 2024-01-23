@@ -30,11 +30,9 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
-ScrollReveal().reveal('#home .content header', { distance: '400px', origin: 'top', duration: 500, easing: 'ease-in-out'});
-ScrollReveal().reveal('#home .content a, #services .content .text, #advogados .content .advogado .text, #sobre .content h2, #sobre .content p, #contato header h2, #contato header p, #contato form label, #contato form .input', { distance: '400px', origin: 'bottom', duration: 500, easing: 'ease-in-out'});
 
-ScrollReveal().reveal('#services .areas .cards .card, #advogados .content .advogado .perfil, #services .content img, #contato form input, #contato form textareas', { distance: '0px', opacity: 0, duration: 700, easing: 'ease-in-out'});
-
+ScrollReveal().reveal('#home .right, #services .content img, #advogados .advogado.one, #contato header, #footer .content', { distance: '200px', origin: 'right', opacity: 0, duration: 700, easing: 'ease-in-out'});
+ScrollReveal().reveal('#home .left, #services .text, #services h2, #services .areas .cards a, #advogados .advogado.two, #sobre h2, #sobre p, #contato input, #contato label, #contato .input, #footer .foot', { distance: '200px', origin: 'left', opacity: 0, duration: 700, easing: 'ease-in-out'});
 
 var swiper3 = new Swiper(".mySwiper3", {
     grabCursor: true,

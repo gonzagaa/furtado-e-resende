@@ -14,10 +14,27 @@ nav {
     font-size: 62.5%;
     --nav-height: 7.2rem;
 
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
+
     --color-text: #f0f0f0;
     --paragraphy-color: #111111;
     --p-color: #444444;
-}  
+
+    --background-dourado: #8c7851;
+    --headline-dourado: #fffffe;
+    --card-paragraphy-dourado: #020826;
+    --card-dourado: #eaddcf;
+
+    --background: #f9f4ef;
+    --card-background: #fffffe; 
+    --headline: #020826;
+    --paragraphy: #716040;
+} 
+
+body {
+  background-color: var(--background);
+}
 
 #areas header {
     margin-bottom: 8rem;
@@ -44,13 +61,13 @@ nav {
 }
 
 summary {
-    background-color: #111111;
+    background-color: var(--background-dourado);
     padding: 1.5rem;
     border-radius: 1rem;
     border: 1px solid #d8d8d894;
     box-shadow: 2px 4px 30px #1b1b1b;
   
-    color: #d8d8d8;
+    color: var(--card-dourado);
   
     display: flex;
     align-items: center;
@@ -66,7 +83,6 @@ details summary svg {
   }
   
 details[open] summary svg {
-   
     transform: rotate(90deg);
   }
   
@@ -79,7 +95,7 @@ details[open] summary svg {
   
 details p {
     /* From https://css.glass */
-    background: rgba(41, 41, 41, 0.61);
+    background: #71604098;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
@@ -101,7 +117,7 @@ details p {
   }
 
   details ul {
-    background: rgba(41, 41, 41, 0.61);
+    background: #71604098;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
