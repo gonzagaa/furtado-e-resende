@@ -553,12 +553,13 @@ html {
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: #d8d8d8;
+  color: #9e7f41;
   text-decoration: none;
 }
 
 #footer .content p.phone ion-icon {
   font-size: 2.5rem;
+  color: #9e7f41;
 }
 
 #footer .content strong {
