@@ -359,6 +359,60 @@ html {
   fill: var(--background);
 }
 
+/* BLOG=================== */
+#blog {
+  background-color: var(--paragraphy-color);
+}
+
+#blog h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--background);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+#blog .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  gap: 8rem;
+}
+
+#blog .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#blog .cards .card img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border: 4px solid var(--background-dourado);
+  border-radius: 1rem;
+
+  box-shadow:  29px 29px 58px #0a0a0a,
+  -29px -29px 58px #181818;
+}
+
+#blog .cards .card span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+#blog .cards .card h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
+
 /* sobre =================== */
 #sobre {
   background-color: var(--background);
@@ -638,7 +692,8 @@ html {
 
  section#services .wrapper .text h2,
  section#services .wrapper .areas h2,
- section#sobre .wrapper h2 {
+ section#sobre .wrapper h2,
+ section#blog .wrapper h2 {
   font-size: 3.5rem;
   text-align: left;
  }
@@ -693,6 +748,24 @@ section#advogados .advogado.one .perfil {
 
 section#advogados .advogado.two .perfil {
   grid-area: B;
+}
+
+section#blog .wrapper .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section#blog .wrapper .cards .card {
+  text-align: left;
+  align-items: start;
+}
+
+section#blog .wrapper .cards .card h3 {
+  font-size: 2rem;
+}
+
+section#blog .wrapper .cards .card img {
+  border: .5px solid var(--background-dourado);
 }
 
 section#sobre p {
