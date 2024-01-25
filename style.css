@@ -200,10 +200,13 @@ html {
 }
 
 #services .content img {
-  max-width: 70%;
+  max-width: 100%;
   border-radius: 1.5rem;
   box-shadow:  20px 20px 60px #b4b4b4,
              -10px -10px 60px #ffffff2f;
+
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }
 
 #services .areas h2 {
@@ -323,6 +326,7 @@ html {
   width: 70%;
   aspect-ratio: 1/1;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 #advogados .advogado .text h3 {
@@ -385,7 +389,7 @@ html {
 #blog .cards .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 1rem;
 }
@@ -438,6 +442,8 @@ html {
 #sobre img {
   width: 100%;
   border-radius: 2rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 /* contato =================== */
 #contato {
@@ -686,6 +692,7 @@ html {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: self-end;
+    gap: 10rem;
  }
 
  section#services .wrapper .content .text {
@@ -708,6 +715,15 @@ html {
   font-size: 3.5rem;
   text-align: center;
  }
+
+ section#advogados .wrapper .content {
+  gap: 4rem;
+ }
+
+ section#advogados .wrapper .content img {
+  width: 80%;
+ }
+
 
  section#advogados .wrapper header p,
  section#sobre .wrapper p {
@@ -778,7 +794,7 @@ section#sobre p {
   font-size: 1.8rem;
 }
 
-section#sobre .wrapper {
+section#sobre .wrapper .content {
   display: flex;
   align-items: center;
   gap: 10rem;
