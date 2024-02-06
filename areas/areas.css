@@ -41,7 +41,7 @@ body {
 }
 
   #areas h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: var(--paragraphy-color);
     margin-bottom: 1rem;
@@ -54,21 +54,26 @@ body {
     margin-bottom: 2rem;
   }
 
-  /* FAQ =================== */
 
+  /* DETAILS =================== */
 .details {
     margin-top: 5rem;
 }
 
+details {
+  text-align: left;
+}
+
 summary {
-    background-color: var(--background-dourado);
+    background-color: var(--paragraphy-color);
     padding: 1.5rem;
+    font-weight: 400;
     border-radius: 1rem;
     border: 1px solid #d8d8d894;
     box-shadow: 2px 4px 30px #1b1b1b;
   
-    color: var(--card-dourado);
-  
+    color: var(--background);
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +100,7 @@ details[open] summary svg {
   
 details p {
     /* From https://css.glass */
-    background: #71604098;
+    background: #38383798;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
@@ -117,7 +122,7 @@ details p {
   }
 
   details ul {
-    background: #71604098;
+    background: #38383798;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
@@ -184,6 +189,14 @@ section#areas .wrapper header {
       
     section#areas .wrapper header p {
     max-width: 60%;
+    font-size: 2rem;
+    }
+
+    section#areas .wrapper details summary {
+      font-size: 2rem;
     }
     
+    section#areas .wrapper details p {
+      font-size: 2rem;
+    }
 }

@@ -431,11 +431,12 @@ html {
 }
 
 #sobre .content p {
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--p-color);
 }
 
-#sobre .content {
+#sobre .content .text {
   margin-bottom: 5rem;
 }
 
@@ -700,14 +701,14 @@ html {
  }
 
  section#services .wrapper .content .text p {
-  font-size: 1.8rem;
+  font-size: 2rem;
  }
 
  section#services .wrapper .text h2,
  section#services .wrapper .areas h2,
  section#sobre .wrapper h2,
  section#blog .wrapper h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: left;
  }
 
@@ -724,11 +725,10 @@ html {
   width: 80%;
  }
 
-
  section#advogados .wrapper header p,
  section#sobre .wrapper p {
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 2rem;
  }
 
  section#services .wrapper .areas {
@@ -743,16 +743,27 @@ html {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-section#advogados .advogado {
+section#advogados .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "A B";
-  align-items: center;
+}
+
+section#advogados .advogado {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+section#advogados .advogado .text h3 {
+  font-size: 2.5rem;
+}
+
+section#advogados .advogado p {
+  font-size: 2rem;
 }
 
 section#advogados .advogado .perfil img {
-  width: 40%;
+  width: 60%;
   aspect-ratio: 1/1;
 }
 
@@ -791,7 +802,7 @@ section#blog .wrapper .cards .card img {
 }
 
 section#sobre p {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 section#sobre .wrapper .content {
