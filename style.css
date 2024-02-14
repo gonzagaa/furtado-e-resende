@@ -331,14 +331,16 @@ html {
 
 #advogados .advogado .text h3 {
   color: var(--headline-dourado);
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
 
 #advogados .advogado .text p {
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
   color: #e4e4e4;
 }
 
