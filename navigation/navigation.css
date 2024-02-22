@@ -95,6 +95,12 @@ nav {
   
   nav .logo img {
     width: 25rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+
+  nav.scroll .logo img {
+    opacity: 1;
   }
   
   nav button {
@@ -260,6 +266,16 @@ nav {
         color: initial;
         background-color: initial;
       }
+
+      nav#navigation .logo img {
+        width: 25rem;
+        opacity: 0;
+        transition: all 500ms ease-in-out;
+      }
+    
+      nav#navigation.scroll .logo img {
+        opacity: 1;
+      }
     
       nav#navigation .close-menu,
       nav#navigation .open-menu,
@@ -271,7 +287,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 60%;
+        width: 66%;
       }
     
       nav#navigation .menu ul:nth-child(1) {

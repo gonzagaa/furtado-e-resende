@@ -301,6 +301,10 @@ html {
   color: var(--headline-dourado);
   font-size: 3rem;
 }
+
+#services .areas .buttonDesktop {
+  display: none;
+}
 /* advogados =================== */
 #advogados {
   background-color: var(--background-dourado);
@@ -739,6 +743,11 @@ html {
 
  section#services .wrapper .areas {
   margin-top: 15rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
  }
   
  section#services .wrapper .areas h2 {
@@ -746,7 +755,39 @@ html {
  }
 
  section#services .areas .cards {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section#services .areas .cards a.button {
+  display: none;
+}
+
+section#services .areas .buttonDesktop {
+  display: initial;
+}
+
+section#services .areas .buttonDesktop button {
+  margin-top: 5rem;
+  padding: 1.5rem 2.5rem;
+  font-weight: 500;
+  color: var(--headline-dourado);
+  background-color: var(--paragraphy-color);
+  box-shadow: 2px 2px 10px #00000086;
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  transition: all 200ms ease-in-out;
+}
+
+section#services .areas .buttonDesktop button:hover {
+  cursor: pointer;
+  background-color: var(--card-background);
+  color: var(--background-dourado);
 }
 
 section#advogados .wrapper h2 {
