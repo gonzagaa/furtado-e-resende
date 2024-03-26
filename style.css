@@ -423,6 +423,40 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+#blog .cards .card a {
+  text-decoration: none;
+}
+
+#blog .cards .card a button {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-text);
+  border: none;
+  background: transparent;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  opacity: .7;
+  transition: all 200ms ease-in-out;
+}
+
+#blog .cards .card a button ion-icon {
+  font-size: 1.6rem;
+  color: var(--color-text);
+
+  transition: all 200ms ease-in-out;
+}
+
+#blog .cards .card a button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#blog .cards .card a button:hover ion-icon {
+  transform: translateX(4px);
+}
+
 /* sobre =================== */
 #sobre {
   background-color: var(--background);
