@@ -487,13 +487,12 @@ html {
 #contato form input {
   width: 100%;
   border: none;
-  background-color: var(--background);
   padding: 1.5rem;
   color: #d8d8d8;
   border-radius: 1rem;
 
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.26);
+  background: rgba(255, 255, 255, 0.075);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
@@ -896,7 +895,22 @@ footer#footer .wrapper .content {
   align-items: center;
   justify-content: space-between;
 }
+}
 
+@media (min-width: 1300px) {
+  .wrapper {
+    width: min(150rem, 100%);
+  }
+}
+
+@media (min-width: 1700px) {
+  .wrapper {
+    width: min(170rem, 100%);
+  }
+
+  :root {
+    font-size: 65%;
+  }
 }
 
 @keyframes movearrow {

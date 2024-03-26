@@ -70,7 +70,7 @@ summary {
     font-weight: 400;
     border-radius: 1rem;
     border: 1px solid #d8d8d894;
-    box-shadow: 2px 4px 30px #1b1b1b;
+    box-shadow: 2px 4px 30px #1b1b1b5b;
   
     color: var(--background);
     
@@ -100,19 +100,16 @@ details[open] summary svg {
   
 details p {
     /* From https://css.glass */
-    background: #38383798;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.7px);
-    -webkit-backdrop-filter: blur(2.7px);
+    background: #242424;
     padding: 2rem;
-  
     border: 1px solid #d8d8d894;
     border-top: none;
     border-radius: 0 0 1rem 1rem;
-  
-    color: #d8d8d8;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #a5a5a5;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.4;
     text-align: left;
   }
 
@@ -122,18 +119,15 @@ details p {
   }
 
   details ul {
-    background: #38383798;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.7px);
-    -webkit-backdrop-filter: blur(2.7px);
+    background: #242424;
     padding: 2rem;
-  
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
     border: 1px solid #d8d8d894;
     border-top: none;
     border-radius: 0 0 1rem 1rem;
   
-    color: #d8d8d8;
+    color: #a5a5a5;
     font-weight: 500;
     line-height: 1.3;
     text-align: left;
