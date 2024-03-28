@@ -113,6 +113,7 @@ details p {
     text-align: left;
   }
 
+
   details:nth-child(1) p {
     border-radius: 0 0 0 0;
     border: 0px;
@@ -144,17 +145,15 @@ details p {
   }
   
   details[open] summary ~ * {
-    animation: swep 300ms ease-in-out;
+    animation: swep 500ms ease-in-out;
   }
   
   @keyframes swep {
     0% {
-      opacity: 0;
-      transform: translateY(-30px);
+      transform: translateY(-20px);
     }
   
     100% {
-      opacity: 1;
       transform: translateY(0px);
     }
   }

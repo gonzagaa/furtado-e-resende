@@ -1,0 +1,125 @@
+nav {
+    backdrop-filter: blur(10px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0.404);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
+
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
+
+    --color-text: #f0f0f0;
+    --paragraphy-color: #111111;
+    --p-color: #444444;
+
+    --background-dourado: #8c7851;
+    --headline-dourado: #fffffe;
+    --card-paragraphy-dourado: #020826;
+    --card-dourado: #eaddcf;
+
+    --background: #f9f4ef;
+    --card-background: #fffffe; 
+    --headline: #020826;
+    --paragraphy: #716040;
+} 
+
+body {
+  background-color: var(--background);
+}
+
+#header {
+    background: var(--paragraphy-color);
+    height: 40vh;
+    position: relative;
+  }
+
+#header {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1 {
+    font-size: 3.5rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+#header h2 {
+    font-size: 2.5rem;
+    color: var(--card-dourado);
+    font-weight: 400;
+}
+
+#escritorio img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+      width: min(80rem, 100%);
+    }
+
+    #header h1 {
+        font-size: 4.5rem;
+    }
+
+    #header h2 {
+        font-size: 3.5rem;
+    }
+
+    section#escritorio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#escritorio img {
+        border: 2px solid var(--card-dourado);
+    }
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(133rem, 100%);
+    }
+
+    section#escritorio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#escritorio img {
+        border: 4px solid var(--card-dourado);
+    }
+}
+
+@media (min-width: 1300px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(170rem, 100%);
+    }
+  
+    :root {
+      font-size: 65%;
+    }
+}

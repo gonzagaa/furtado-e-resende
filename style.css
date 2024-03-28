@@ -11,6 +11,7 @@
     --color-text: #f0f0f0;
     --paragraphy-color: #111111;
     --p-color: #444444;
+    --p-color-2: #6b6b6b;
 
     --background-dourado: #8c7851;
     --headline-dourado: #fffffe;
@@ -266,7 +267,6 @@ html {
 #services .areas .cards .card:hover h3 {
   transition: all 200ms ease-in-out;
   color: #716040;
-
 }
 
 #services .areas .cards .card:hover p {
@@ -282,7 +282,7 @@ html {
 
 #services .areas .cards .card:hover {
   background-color: var(--background);
-  box-shadow: 4px 8px 30px #7c7c7c;
+  box-shadow: 4px 8px 30px #7c7c7c63;
   cursor: pointer;
 }
 
@@ -305,6 +305,7 @@ html {
 #services .areas .buttonDesktop {
   display: none;
 }
+
 /* advogados =================== */
 #advogados {
   background-color: var(--background-dourado);
@@ -476,6 +477,40 @@ html {
   color: var(--p-color);
 }
 
+#sobre .content a {
+  text-decoration: none;
+}
+
+#sobre .content a button {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--background-dourado);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: var(--card-dourado);
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  transition: all 200ms ease-in-out;
+}
+
+#sobre .content a button ion-icon {
+  font-size: 1.6rem;
+
+  transition: all 200ms ease-in-out;
+}
+
+#sobre .content a button:hover {
+  cursor: pointer;
+  filter: brightness(.9);
+}
+
+#sobre .content a button:hover ion-icon {
+  transform: translateX(4px);
+}
+
 #sobre .content .text {
   margin-bottom: 5rem;
 }
@@ -486,6 +521,7 @@ html {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+
 /* contato =================== */
 #contato {
   background-image: url(./assets/Captura\ de\ tela\ 2024-01-22\ 174925.png);
@@ -821,7 +857,7 @@ section#services .areas .buttonDesktop button {
   font-weight: 500;
   color: var(--headline-dourado);
   background-color: var(--paragraphy-color);
-  box-shadow: 2px 2px 10px #00000086;
+  box-shadow: 2px 2px 10px #00000027;
   border: none;
   border-radius: 1rem;
 
@@ -873,7 +909,7 @@ section#blog .wrapper .cards .card img {
   border: .5px solid var(--background-dourado);
 }
 
-section#sobre p {
+section#sobre .wrapper p {
   font-size: 2rem;
 }
 
