@@ -1,5 +1,9 @@
 @import '../sobre/sobre.css';
 
+nav#navigation .logo img {
+    opacity: 1;
+}
+
 #noticia-principal,
 #noticias {
     background-color: var(--background);
@@ -259,7 +263,7 @@
 
     section#noticias .cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 5rem;
+        gap: 3rem;
     }
 
     section#noticias .cards .card {

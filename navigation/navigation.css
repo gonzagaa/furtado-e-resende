@@ -268,7 +268,7 @@ nav {
       }
 
       nav#navigation .logo img {
-        width: 25rem;
+        width: 20rem;
         opacity: 0;
         transition: all 500ms ease-in-out;
       }
@@ -287,7 +287,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 66%;
+        width: 70%;
       }
     
       nav#navigation .menu ul:nth-child(1) {
@@ -297,7 +297,7 @@ nav {
     
       nav#navigation .menu ul li a {
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 500;
         opacity: .7;
       }
 

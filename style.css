@@ -127,6 +127,10 @@ html {
     align-items: center;
   }
 
+  .banner .content .left img.logo {
+    width: 20rem;
+  }
+
   .banner .right {
     position: relative;
     margin: 0 auto;
@@ -611,6 +615,10 @@ html {
   align-items: center;
   justify-content: center;
   gap: 3rem;
+}
+
+#footer img.logo {
+  width: 12rem;
 }
 
 #footer .content ion-icon {
