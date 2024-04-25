@@ -473,12 +473,14 @@ html {
   color: var(--paragraphy-color);
   margin-bottom: 3rem;
   text-transform: uppercase;
+  text-align: left;
 }
 
 #sobre .content p {
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--p-color);
+  text-align: left;
 }
 
 #sobre .content a {
@@ -819,7 +821,7 @@ html {
  }
 
  section#services .wrapper .content .text p {
-  font-size: 2rem;
+  font-size: 2.5rem;
  }
 
  section#services .wrapper .text h2,
@@ -899,6 +901,14 @@ section#advogados .wrapper .content img {
   width: 40rem;
 }
 
+section#advogados .wrapper .content h3 {
+  font-size: 3rem;
+}
+
+section#advogados .wrapper .content p {
+  font-size: 1.8rem;
+}
+
 section#blog .wrapper .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -918,13 +928,17 @@ section#blog .wrapper .cards .card img {
 }
 
 section#sobre .wrapper p {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 section#sobre .wrapper .content {
-  display: flex;
-  align-items: center;
-  gap: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+section#sobre .wrapper .content img {
+  aspect-ratio: 16/10;
 }
 
 section#sobre .wrapper .content .swiper {
