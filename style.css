@@ -488,15 +488,15 @@ html {
 }
 
 #sobre .content a button {
+  color: var(--card-dourado);
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: var(--background-dourado);
+  background: var(--paragraphy-color);
   border: none;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background: var(--card-dourado);
   font-size: 1.6rem;
   margin-top: 2rem;
   transition: all 200ms ease-in-out;
@@ -975,6 +975,10 @@ section#contato .wrapper header p {
 
 section#contato .wrapper form {
   grid-area: A;
+}
+
+section#contato .wrapper button {
+  font-size: 1.8rem;
 }
 
 footer#footer .wrapper {
