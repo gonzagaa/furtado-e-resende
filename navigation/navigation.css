@@ -255,6 +255,10 @@ nav {
 }
 
 @media (min-width: 1080px) {
+  .wrapper {
+    width: min(133rem, 100%);
+  }
+
     /* reset =================== */
       nav#navigation .wrapper * {
         margin: 0;
@@ -323,8 +327,8 @@ nav {
         border-radius: 1rem;
       }
   
-      nav#navigation .menu a:hover button{
-        color: var(--color-text);
+      nav#navigation .menu a:hover button {
+        color: var(--color-text); 
         background-color: transparent;
         outline: 1px solid #d8d8d8;
       }
@@ -381,13 +385,10 @@ nav {
       nav#navigation .menu li a:hover::after {
         padding-inline: 1rem;
         width: 100%;
-      }
-
-      .wrapper {
-        width: min(133rem, 100%);
-      }
-    
+      }    
     } 
+
+  
 
   /* ANIMATIONS =================== */
 
