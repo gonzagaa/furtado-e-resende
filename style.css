@@ -129,6 +129,8 @@ html {
 
   .banner .content .left img.logo {
     width: 20rem;
+    position: relative;
+    z-index: 1;
   }
 
   .banner .right {
@@ -488,7 +490,7 @@ html {
 }
 
 #sobre .content a button {
-  color: var(--card-dourado);
+  color: var(--background);
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
